@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustHome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navbar & Hero Section Combined -->
+<header class="hero-section">  
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container d-flex justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/image.png" alt="JustHome" style="height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="listingsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Listings
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="listingsDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="membersDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Members
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="membersDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                                <a class="dropdown-item" href="#">Page 1</a>
+                                <a class="dropdown-item" href="#">Page 2</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-phone"></i> +68 685 88666</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="btn btn-outline-light">Add Property</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <div class="container hero-content text-center">
+        <h1>Discover a place you'll love to live</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Enter Name, Keywords...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="sale-rent mt-3">
+            <a href="#" class="active">Sale</a>
+            <a href="#">Rent</a>
+        </div>
+    </div>
+</header>
+
+     <!-- Homes For You Section -->
+     <section class="homes-for-you">
+        <div class="container">
+            <h2 class="text-center">Homes For You</h2>
+            <p class="text-center">Based on your view history</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img class="card-img-top" src="Images/House int 1.jpg" alt="Skyper Pool Apartment">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">Skyper Pool Apartment</h5>
+                                <span class="text-danger ms-2">$280,000</span>
+                            </div><br>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> 1020 Bloomingdale Ave</p>
+                            <div class="d-flex justify-content-between">
+                                <span><i class="fa fa-bed" aria-hidden="true"></i> 4 Beds</span>
+                                <span><i class="fa fa-bath" aria-hidden="true"></i> 2 Baths</span>
+                                <span><i class="fa fa-clone" aria-hidden="true"></i> 450 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img class="card-img-top" src="Images/Modern house 2.jpg" alt="North Divert Street">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">North Dillard Street</h5>
+                                <span class="text-danger ms-2">$250/month</span>
+                            </div><br>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> 4330 Bell Sholas Rd</p>
+                            <div class="d-flex justify-content-between">
+                                <span><i class="fa fa-bed" aria-hidden="true"></i> 4 Beds</span>
+                                <span><i class="fa fa-bath" aria-hidden="true"></i> 2 Baths</span>
+                                <span><i class="fa fa-clone" aria-hidden="true"></i> 400 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="col-md-4">
+                    <div class="card mx-auto" style="width: 18rem;">
+                        <img class="card-img-top" src="Images/House int 6.jpg" alt="North Divert Street">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">Eaton Garth Penthouse</h5>
+                                <span class="text-danger ms-2">$180,000</span>
+                            </div><br>
+                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> 7722 18th Ave, Brooklyn</p>
+                            <div class="d-flex justify-content-between">
+                                <span><i class="fa fa-bed" aria-hidden="true"></i> 4 Beds</span>
+                                <span><i class="fa fa-bath" aria-hidden="true"></i> 2 Baths</span>
+                                <span><i class="fa fa-clone" aria-hidden="true"></i> 450 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Properties in These Cities Section -->
+    <section class="cities-section">
+        <div class="container">
+            <h2 class="text-center">Find Properties in These Cities</h2>
+            <p class="text-center">Learn your dream home, connect with a local expert.</p>
+            <div class="row">
+                <div class="col-md-6 col-landscape mb-4">
+                    <div class="city-card landscape">
+                        <img src="Images/Newyork.jpg" class="img-fluid" alt="New York">
+                        <div class="city-info">
+                            <h5>New York</h5>
+                            <p>9 Properties</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-portrait mb-4">
+                    <div class="city-card portrait">
+                        <img src="Images/Chicagi.jpg"img-fluid" alt="Chicago">
+                        <div class="city-info">
+                            <h5>Chicago</h5>
+                            <p>7 Properties</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-portrait mb-4">
+                    <div class="city-card portrait">
+                        <img src="Images/Los Angeles.jpg" class="img-fluid" alt="Los Angeles">
+                        <div class="city-info">
+                            <h5>Los Angeles</h5>
+                            <p>8 Properties</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Row -->
+            <div class="row">
+                <div class="col-md-3 col-portrait mb-4">
+                    <div class="city-card portrait">
+                        <img src="Images/San diego.jpg" class="img-fluid" alt="San Diego">
+                        <div class="city-info">
+                            <h5>San Diego</h5>
+                            <p>6 Properties</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-portrait mb-4">
+                    <div class="city-card portrait">
+                        <img src="Images/Florida.jpg" class="img-fluid" alt="Florida">
+                        <div class="city-info">
+                            <h5>Florida</h5>
+                            <p>7 Properties</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-landscape mb-4">
+                    <div class="city-card landscape">
+                        <img src="Images/Miami.jpg" class="img-fluid" alt="Miami">
+                        <div class="city-info">
+                            <h5>Miami</h5>
+                            <p>5 Properties</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us Section -->
+<section class="why-choose-us py-5">
+    <div class="container">
+        <h2 class="text-center">Why Choose Us</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row text-center">
+            <div class="col-md-3">
+                <i class="fas fa-home fa-2x mb-3"></i>
+                <h5>Find Your Future Home</h5>
+                <p>Explore a wide range of properties to find your future home.</p>
+            </div>
+            <div class="col-md-3">
+                <i class="fas fa-user-tie fa-2x mb-3"></i>
+                <h5>Experienced Agents</h5>
+                <p>Our agents have years of experience in helping clients buy and sell homes.</p>
+            </div>
+            <div class="col-md-3">
+                <i class="fas fa-dollar-sign fa-2x mb-3"></i>
+                <h5>Buy & Sell Homes</h5>
+                <p>Get the best deals whether you're buying or selling your home.</p>
+            </div>
+            <div class="col-md-3">
+                <i class="fas fa-chart-line fa-2x mb-3"></i>
+                <h5>List Your Own Property</h5>
+                <p>List your property easily and attract potential buyers.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Best Properties Section -->
+<section class="best-properties py-5">
+    <div class="container">
+        <h2 class="text-center mb-3">Best Properties</h2>
+        <p class="text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="row g-4">
+                    <div class="col-12" style="padding-bottom: 10px;">
+                        <div class="card">
+                            <img class="card-img-top rounded-4" src="Images/House int 5.jpg" alt="House int 5" height="47%%">
+                            <button class="carousel-control-prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card text-white bg-dark rounded-4" style="height: 240px;">
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <div>
+                                    <h3 class="fw-bold">280+</h3>
+                                    <p style="color: white;">Properties</p>
+                                    <p style="color: white;">Explore our wide variety of properties to find your dream home today.</p>
+                                </div>
+                                <div class="text-end">
+                                    <a href="#" class="text-white fs-3"><i class="bi bi-arrow-right-circle"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <img class="card-img-top rounded-4" src="Images/House int 4.jpg" alt="House int 4" height="240px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card position-relative">
+                    <img class="card-img-top rounded-4" src="Images/villa 1.jpg" alt="Villa One Hyde Park" height="550px">
+                    <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
+                        <div class="badge-container position-absolute top-3 start-3">
+                            <span class="badge bg-success p-2 rounded-pill">FOR SALE</span>
+                            <span class="badge bg-warning p-2 rounded-pill ms-2">FEATURED</span>
+                        </div>
+                        <h5 class="card-title text-white">Villa One Hyde Park</h5>
+                        <p class="card-text text-white-50">205 Bloomingdale Ave</p>
+                        <div class="d-flex justify-content-between text-white-50 mt-2">
+                            <span><i class="fa fa-bed"></i> 4</span>
+                            <span><i class="fa fa-bath"></i> 2</span>
+                            <span><i class="fa fa-clone"></i> 350 sqft</span>
+                        </div>
+                        <h4 class="text-white mt-3">$120,000</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Local Experts Section -->
+<section class="local-experts py-5" style="background-color: #1f4b43;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="position-relative">
+                    <img class="img-fluid rounded-3" src="Images/Experts.jpg" alt="Local Experts">
+                    <div class="badge-container position-absolute top-0 start-0 m-3">
+                        <span class="badge bg-light text-dark p-2 fs-6">
+                            <i class="bi bi-people-fill me-2"></i>Total Clients<br><strong>7,000 M</strong>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-md-left">
+                <h2 class="text-white mb-4">Local expertise for luxury homes</h2>
+                <p class="text-white-50 mb-4">Pellentesque egestas elementum egestas faucibus sem. Velit nunc egestas ut morbi. Leo diam diam nibh eget fermentum massa pretium. Mi mauris nulla ac dictum ut mauris non.</p>
+                <a href="#" class="btn btn-warning rounded-pill">Learn More <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="row text-center mt-5 text-white">
+            <div class="col-3">
+                <h3 class="text-warning mb-0">$18M</h3>
+                <p class="text-white-50">Owned from properties transactions</p>
+            </div>
+            <div class="col-3">
+                <h3 class="text-warning mb-0">26K</h3>
+                <p class="text-white-50">Properties for Buy</p>
+            </div>
+            <div class="col-3">
+                <h3 class="text-warning mb-0">15K</h3>
+                <p class="text-white-50">Properties for Sell</p>
+            </div>
+            <div class="col-3">
+                <h3 class="text-warning mb-0">800</h3>
+                <p class="text-white-50">Daily completed transactions</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Customer Review Section -->
+<section class="customer-review py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2>What our customers are saying us?</h2>
+                <p class="text-muted">Various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like.</p>
+                <div class="d-flex align-items-center">
+                    <div>
+                        <h3 class="mb-0">10m+</h3>
+                        <p class="text-muted">Happy People</p>
+                    </div>
+                    <div class="ms-5">
+                        <h3 class="mb-0">4.88</h3>
+                        <p class="text-muted">Overall rating</p>
+                        <div class="text-warning">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="review-box position-relative">
+                    <div class="d-flex align-items-start mb-3">
+                        <img src="Images/Customer.jpg" alt="Cameron Williamson" class="rounded-circle me-3" width="60">
+                        <div>
+                            <h5 class="mb-0 text-start">Cameron Williamson</h5>
+                            <p class="text-muted mb-0 text-start">Designer</p>
+                        </div>
+                    </div>
+                    <p class="text-start">Searches for multiplexes, property comparisons, and the loan estimator. Works great. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolores.</p>
+                    <div class="quote-icon position-absolute top-0 end-0 me-4 mt-2 fs-1 text-muted">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                </div>
+                <div class="chevron-container">
+                    <button class="chevron-button">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="chevron-button">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center mt-5">
+            <div class="col">
+                <p class="text-muted">Thousands of world's leading companies trust Space</p>
+                <div class="d-flex justify-content-center align-items-center flex-wrap logos">
+                    <img src="Images/Amazon.png" alt="Amazon" height="30">
+                    <img src="Images/AMD.png" alt="AMD" height="30">
+                    <img src="Images/Cisco.png" alt="Cisco" height="30">
+                    <img src="Images/Dropcam.png" alt="Dropcam" height="30">
+                    <img src="Images/Logitech.png" alt="Logitech" height="30">
+                    <img src="Images/Spotify.png" alt="Spotify" height="30">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Recent Articles & News Section -->
+<section class="recent-article-news py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Recent Articles & News</h2>
+        <p class="text-center text-muted mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <img src="Images/House int 5.jpg" class="card-img-top" alt="Housing Markets">
+                    <div class="card-body">
+                        <p class="text-black small mb-2">Apartment • March 19, 2024</p>
+                        <h5 class="card-title">Housing Markets That Changed the Most This Week</h5>
+                        <a href="#" class="stretched-link text-black text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <img src="Images/villa 1.jpg" class="card-img-top" alt="Canadian Cities">
+                    <div class="card-body">
+                        <p class="text-black small mb-2">Apartment • March 19, 2024</p>
+                        <h5 class="card-title">Red Unveils the Best Canadian Cities for Biking</h5>
+                        <a href="#" class="stretched-link text-black text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <img src="Images/House int 6.jpg" class="card-img-top" alt="Walkable Cities">
+                    <div class="card-body">
+                        <p class="text-black small mb-2">Office • March 19, 2024</p>
+                        <h5 class="card-title">10 Walkable Cities Where You Can Live Affordably</h5>
+                        <a href="#" class="stretched-link text-black text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border-0">
+                    <img src="Images/Villa 2.jpg" class="card-img-top" alt="Best Canadian Cities">
+                    <div class="card-body">
+                        <p class="text-black small mb-2">Shop • March 19, 2024</p>
+                        <h5 class="card-title">New Apartment Nice in the Best Canadian Cities</h5>
+                        <a href="#" class="stretched-link text-black text-decoration-none">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Popular Searches Section -->
+<div class="popular-searches">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Real Estate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New Homes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Popular Area</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Popular Searches</a>
+                    </li>
+                </ul>
+                <div class="mt-3">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <p>Real Estate NY</p>
+                            <p>Real Estate Brooklyn</p>
+                            <p>Real Estate Queens</p>
+                            <p>Real Estate The Bronx</p>
+                            <p>Real Estate Staten</p>
+                            <p>Real Estate Jersey</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Real Estate Norwalk</p>
+                            <p>Real Estate Downey</p>
+                            <p>Real Estate Torrance</p>
+                            <p>Real Estate Pomona</p>
+                            <p>Real Estate Glendale</p>
+                            <p>Real Estate Inglewood</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Real Estate Chicago</p>
+                            <p>Real Estate Cook</p>
+                            <p>Real Estate Kane</p>
+                            <p>Real Estate Lake</p>
+                            <p>Real Estate Will</p>
+                            <p>Real Estate DuPage</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Real Estate Miami</p>
+                            <p>Real Estate Calhoun</p>
+                            <p>Real Estate Charlotte</p>
+                            <p>Real Estate Citrus</p>
+                            <p>Real Estate Clay</p>
+                            <p>Real Estate Collier</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Real Estate Columbia</p>
+                            <p>Real Estate DeSoto</p>
+                            <p>Real Estate Dixie</p>
+                            <p>Real Estate Duval</p>
+                            <p>Real Estate Escambia</p>
+                            <p>Real Estate Flagler</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Become a Real Estate Agent Section -->
+        <div class="row mt-5 p-5" style="background-color: #fcf7f4;">
+            <div class="col-md-8">
+                <h2>Become a Real Estate Agent</h2>
+                <p>We only work with the best companies around the globe</p>
+            </div>
+            <div class="col-md-4 d-flex align-items-center justify-content-end">
+                <a href="#" class="btn btn-warning text-white">
+                    Register Now <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Logo and Social Links -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <div class="footer-logo">
+                    <img src="Images/image.png" alt="JustHome Logo" />
+                </div>
+                <div class="footer-social">
+                    <p>Follow Us</p>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Subscribe Section -->
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                <h5>Subscribe</h5>
+                <form>
+                    <input type="email" placeholder="Your e-mail" />
+                    <button type="submit">Send <i class="fas fa-arrow-right"></i></button>
+                </form>
+                <p>Subscribe to our newsletter to receive our weekly feed.</p>
+            </div>
+
+            <!-- Discover Section -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <h5>Discover</h5>
+                <ul>
+                    <li><a href="#">Miami</a></li>
+                    <li><a href="#">New York</a></li>
+                    <li><a href="#">Chicago</a></li>
+                    <li><a href="#">Florida</a></li>
+                    <li><a href="#">Los Angeles</a></li>
+                    <li><a href="#">San Diego</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pricing Plans</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info Section and Address -->
+            <div class="col-lg-4 col-md-8 col-sm-12 mb-4">
+                <div class="row">
+                    <!-- Contact Us -->
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h5>Contact Us</h5>
+                        <p>hi@justhome.com</p>
+                        <p>(123) 456-7890</p>
+                    </div>
+                    <!-- Our Address -->
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h5>Our Address</h5>
+                        <p>99 Fifth Avenue, 3rd Floor</p>
+                        <p>San Francisco, CA 1980</p>
+                    </div>
+                    <!-- Get the App -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                        <h5>Get the app</h5>
+                        <a href="#" class="app-link">
+                            <img src="Images/Link.png" alt="Apple Store" />
+                        </a>
+                        <a href="#" class="app-link">
+                            <img src="Images/Link (1).png" alt="Google Play" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <p class="footer-copy">Copyright © 2024. JustHome</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
